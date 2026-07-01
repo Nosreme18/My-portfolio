@@ -8,26 +8,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
 
-    <section class="FirstSection">
+    <section class="FirstSection section hidden" id="home">
         <header>
         <!-- <img src="{{ asset('images/MyPortfolio/Logo/logo.png') }}" alt="Logo" class="logo"> -->
             <nav>
                 <ul class="nav-links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
             <div class="SectionOneContent">
                 <div class="SectionOneImage">
-                    <img src="{{ asset('Image/Me/2.png') }}" alt="Me"  class="profile-image">
+                   <div class="image_border">
+                     <img src="{{ asset('Image/Me/2.png') }}" alt="Me"  class="profile-image">
+                   </div>
                 </div>
                 <div class="SectionOneType">
                     <h4>Hello! I'm</h4>
@@ -40,10 +43,43 @@
             </div>
                                                                                           
     </section>
+    <section class=" hidden" id="about">
+         <div class="about-heading">
+            <div class="about-container">
+                 <img src="{{ asset('Image/Me/1.jpg') }}" alt="About">
+                <div class="about-address">
+                    <h1>Emerson Corpuz</h1>
+                    <h3>#ADDRESS</h3>
+                    <p>corpue027@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>I am an undergraduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals</p>
+            </div>
+            <div class="about-info">
+                <div class="about-work">
+                    <h1>Work Experience</h1>
+
+                    <h6>NOV 2022 - SEP 2023</h6>
+                    <h3>Rain Cockfigth arena</h3>
+                    <div class="work-desp">
+                        I worked as a Staff Assistant in Sta. Maria, Pangasinan, where I assisted in daily operations and handled data collection and record management. My responsibilities included organizing information, monitoring transactions, coordinating with team members, and ensuring that records were accurate and properly maintained.
+                    </div>
+                </div>
+                <div class="about-skill">
+                    <h1>Education </h1>
+                </div>  
+            </div>
+        </div>
+        
+    </section>
 
     <script>
        const box = document.querySelector(".SectionOneImage");
-    const image = document.querySelector(".profile-image");
+        const image = document.querySelector(".profile-image");
 
         box.addEventListener("mousemove", (e) => {
 
@@ -63,5 +99,6 @@
 
         });
     </script>
+    
 </body>
 </html>
