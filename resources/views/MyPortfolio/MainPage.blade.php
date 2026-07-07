@@ -15,7 +15,7 @@
 
     <section class="FirstSection section hidden" id="home">
         <header>
-        <!-- <img src="{{ asset('images/MyPortfolio/Logo/logo.png') }}" alt="Logo" class="logo"> -->
+             <img src="{{ asset('Image/Me/My_logo.png') }}" alt="Logo" class="logo"> 
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -49,33 +49,97 @@
                  <img src="{{ asset('Image/Me/1.jpg') }}" alt="About">
                 <div class="about-address">
                     <h1>Emerson Corpuz</h1>
-                    <h3>#ADDRESS</h3>
-                    <p>corpue027@gmail.com</p>
+                    <h3>Rosales Pangasina</h3>
+                    <span>corpue027@gmail.com</span>
                 </div>
             </div>
         </div>
         <div class="about-content">
             <div class="about-me">
                 <h1>About Me</h1>
-                <p>I am an undergraduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals</p>
+                <p>I am an undergraduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals.</p>
             </div>
             <div class="about-info">
                 <div class="about-work">
                     <h1>Work Experience</h1>
-
-                    <h6>NOV 2022 - SEP 2023</h6>
-                    <h3>Rain Cockfigth arena</h3>
-                    <div class="work-desp">
-                        I worked as a Staff Assistant in Sta. Maria, Pangasinan, where I assisted in daily operations and handled data collection and record management. My responsibilities included organizing information, monitoring transactions, coordinating with team members, and ensuring that records were accurate and properly maintained.
+                    <div class="work-expirence">
+                        <h6 class="work-date">NOV 2022 - SEP 2023</h6>
+                        <h3 class="work-title">Rain Cockfigth arena</h3>
+                        <div class="work-desp">
+                            I worked as a Staff Assistant in Sta. Maria, Pangasinan, where I assisted in daily operations and handled data collection and record management. My responsibilities included organizing information, monitoring transactions, coordinating with team members, and ensuring that records were accurate and properly maintained.
+                        </div>
+                    </div>
+                       <div class="work-expirence">
+                        <h6 class="work-date">FEBRUARY - MAY</h6>
+                        <h3 class="work-title">Student Intern - Local Government Unit of Rosales</h3>
+                        <div class="work-desp">
+                            Collected and encoded employee data using biometric systems, assisted in LAN cable setup and network management, managed photo documentation and organized digital files, produced and printed Tricycle Driver (TODA) identification cards, and provided basic technical support and troubleshooting.
+                        </div>
                     </div>
                 </div>
-                <div class="about-skill">
+
+
+                <div class="about-education">
                     <h1>Education </h1>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <h2>Primary</h2>
+                                <p>Escuela De San Antonio</p>
+                                <p>2009 - 2015</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <h2>Secondary</h2>
+                                <p>Rosales National High School</p>
+                                <p>Junior High : 2015 - 2019</p>
+                                <p>Senior High TVL ICT : 2019 - 2021</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <h2>Tertiary</h2>
+                                <p>Urdaneta City University</p>
+                                <p>Bachelor of Science in Information Technology</p>
+                                <p>2021 - 2026</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>  
             </div>
+            <div id="about-skill">
+                <h1>Tools & Technologies</h1>
+                    <div class="skill-content">
+                        <h3 class="skill-title">Frontend Development</h3>
+                        <div class="tools">
+                            <div class="tool-item">HTML</div>
+                            <div class="tool-item">CSS</div>
+                            <div class="tool-item">JavaScript</div>
+                        </div>
+                    </div>
+                        <div class="skill-content">
+                        <h3 class="skill-title">Backend Development</h3>
+                        <div class="tools">
+                            <div class="tool-item">Python</div>
+                            <div class="tool-item">Java</div>
+                            <div class="tool-item">Laravel</div>
+                        </div>
+                    </div>
+            </div>
         </div>
-        
     </section>
+
+   
 
     <script>
        const box = document.querySelector(".SectionOneImage");
@@ -99,6 +163,8 @@
 
         });
     </script>
-    
+    <script>
+        
+</script>
 </body>
 </html>
