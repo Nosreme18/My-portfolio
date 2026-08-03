@@ -9,23 +9,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+ <!-- ICON FONT -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>My Portfolio</title>
 </head>
 <body>
-
-    <section class="FirstSection section hidden" id="home">
-        <header>
-             <img src="{{ asset('Image/Me/My_logo.png') }}" alt="Logo" class="logo"> 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
+    <header class="hidden">
+        <img src="{{ asset('Image/Me/My_logo.png') }}" alt="Logo" class="logo "> 
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item" >
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="FirstSection section " id="home">
             <div class="SectionOneContent">
                 <div class="SectionOneImage">
                    <div class="image_border">
@@ -33,20 +47,35 @@
                    </div>
                 </div>
                 <div class="SectionOneType">
-                    <h4>Hello! I'm</h4>
-                    <h1>Emerson Corpuz</h1>
-                    <h3 class="typing-text">I'm a <span>Web Developer</span></h3>
-                    <p>I am an fresh graduate web developer with foundational 
+                    <h4 class="hidden">Hello! I'm</h4>
+                    <h1 class="hidden">Emerson Corpuz</h1>
+                    <h3 class="typing-text hidden">I'm a <span>Web Developer</span></h3>
+                    <p class="hidden">I am an fresh graduate web developer with foundational 
                         knowledge in web development technologies, eager to 
                         apply what I have learned in an actual working environment.</p>
+                    <div class="social_media">
+                        <div class="media_icon">
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                          <div class="media_icon">
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                          <div class="media_icon">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                          <div class="media_icon">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-                                                                                          
+            </div>                                                                                    
     </section>
-    <section class=" hidden" id="about">
+    <section class="hidden" id="about">
+<!-- ABOUT HEADER -->
          <div class="about-heading">
             <div class="about-container">
-                 <img src="{{ asset('Image/Me/1.jpg') }}" alt="About">
+                 <img src="{{ asset('Image/Me/1.jpg') }}" alt="About" >
                 <div class="about-address">
                     <h1>Emerson Corpuz</h1>
                     <h3>Rosales Pangasina</h3>
@@ -54,22 +83,24 @@
                 </div>
             </div>
         </div>
+
+<!-- WORK EXPERIENCE -->
         <div class="about-content">
-            <div class="about-me">
-                <h1>About Me</h1>
-                <p>I am an undergraduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals.</p>
+            <div class="about-me ">
+                <h1 class="hidden">About Me</h1>
+                <p class="hidden">I am an undergraduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals.</p>
             </div>
             <div class="about-info">
-                <div class="about-work">
+                <div class="about-work hidden">
                     <h1>Work Experience</h1>
-                    <div class="work-expirence">
+                    <div class="work-expirence hidden">
                         <h6 class="work-date">NOV 2022 - SEP 2023</h6>
                         <h3 class="work-title">Rain Cockfigth arena</h3>
                         <div class="work-desp">
                             I worked as a Staff Assistant in Sta. Maria, Pangasinan, where I assisted in daily operations and handled data collection and record management. My responsibilities included organizing information, monitoring transactions, coordinating with team members, and ensuring that records were accurate and properly maintained.
                         </div>
                     </div>
-                       <div class="work-expirence">
+                       <div class="work-expirence hidden">
                         <h6 class="work-date">FEBRUARY - MAY</h6>
                         <h3 class="work-title">Student Intern - Local Government Unit of Rosales</h3>
                         <div class="work-desp">
@@ -79,9 +110,9 @@
                 </div>
 
 
-                <div class="about-education">
+                <div class="about-education ">
                     <h1>Education </h1>
-                    <div class="timeline">
+                    <div class="timeline hidden">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
 
@@ -117,6 +148,14 @@
                     </div>
                 </div>  
             </div>
+<!-- CERTIFICATE-->
+        <div id="certificate">
+            <h1>Certificate</h1>
+                <div class="certified">
+
+                </div>
+        </div>
+<!-- Tools & Technologies -->
             <div id="about-skill">
                 <h1>Tools & Technologies</h1>
                     <div class="skill-content">
@@ -138,8 +177,58 @@
             </div>
         </div>
     </section>
+<!-- PROJECT SECTION -->
+    <section id="projects">
+        <div class="project-container">
 
-   
+        </div>
+    </section>
+
+   <!-- JavaScript Section Start Here! -->
+<script>
+    const words = [
+    "Web Developer",
+    "Frontend Developer",
+    "Laravel Developer",
+    "UI Designer"
+];
+
+const text = document.querySelector(".typing-text span");
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (!deleting) {
+        text.textContent = currentWord.substring(0, charIndex++);
+    } else {
+        text.textContent = currentWord.substring(0, charIndex--);
+    }
+
+    let speed = deleting ? 60 : 120;
+
+    if (!deleting && charIndex === currentWord.length + 1) {
+        deleting = true;
+        speed = 1500;
+    }
+
+    if (deleting && charIndex === 0) {
+        deleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+setTimeout(() => {
+    typeEffect();
+}, 2000);
+</script>
+<script type="module" src="{{ asset('JS/toggle_bar.js') }}"></script>
 
     <script>
        const box = document.querySelector(".SectionOneImage");
@@ -163,8 +252,6 @@
 
         });
     </script>
-    <script>
-        
-</script>
+    
 </body>
 </html>
