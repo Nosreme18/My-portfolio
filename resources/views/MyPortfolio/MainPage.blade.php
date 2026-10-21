@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="{{ asset('Image/Me/My_logo.png') }}">
+
     <link rel="stylesheet" href="{{ asset('CSS/MainPageCss/mainpage.css') }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
  <!-- ICON FONT -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -88,7 +91,7 @@
         <div class="about-content">
             <div class="about-me ">
                 <h1 class="hidden">About Me</h1>
-                <p class="hidden">I am an undergraduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals.</p>
+                <p class="hidden">I am fresh graduate web developer with foundational knowledge in web development technologies, capable of assisting in solving web-related problems through logical thinking and a willingness to learn. I can help improve and maintain web systems by carefully following requirements, identifying issues, and working on practical solutions that support the company’s goals.</p>
             </div>
             <div class="about-info">
                 <div class="about-work hidden">
@@ -181,6 +184,57 @@
     <section id="projects">
         <div class="project-container">
 
+        </div>
+    </section>
+<!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="contact-container">
+                <h2>Contact Me</h1>
+            <div class="content">
+                <div class="contact-details">
+                    
+                    <p>Let's connect! Whether you have a project idea, a job opportunity, or simply want to say hello, feel free to send me a message. I'll be happy to hear from you</p>
+
+                </div>
+                <div class="contact-form">
+                    <h6>Send Me a Message</h6>
+                    <form action="" method="">
+                        @csrf
+                        <div class="guest-name">
+                            <div class="person guest-firstname">
+                                <label for="firstname">First Name:</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
+                            </div>
+                            <div class=" person guest-lastname">
+                                <label for="lastname">Last Name:</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+                            </div>  
+                        </div>
+                        <div class="guest-info">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="guest-info">
+                           <label for="title">Title:</label>
+                            <input type="text" name="title" id="title" placeholder="Enter your title">
+                        </div>
+
+                        <div class="guest-message">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <div class="guest-submit">
+                            <div class="robot-btn">
+                                <input type="checkbox" name="robot" id="robot">
+                                <label for="robot">I'm not a Robot</label>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </section>
 
